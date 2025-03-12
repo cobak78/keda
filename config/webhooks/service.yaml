@@ -9,7 +9,7 @@ metadata:
     app.kubernetes.io/part-of: keda
     app.kubernetes.io/managed-by: kustomize
   name: keda-admission-webhooks
-  namespace: keda
+  namespace: stackit-git-keda
 spec:
   ports:
     - name: https

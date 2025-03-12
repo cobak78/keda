@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/version: latest
     app.kubernetes.io/part-of: keda-operator
   name: keda-operator
-  namespace: keda
+  namespace: stackit-git-keda
 spec:
   ports:
   - name: metricsservice

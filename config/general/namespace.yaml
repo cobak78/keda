@@ -2,7 +2,8 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    app.kubernetes.io/name: keda
+    app.kubernetes.io/name: stackit-git-keda
     app.kubernetes.io/version: latest
     app.kubernetes.io/part-of: keda-operator
-  name: keda
+    git.stackit.cloud/dockerconfigjson: required
+  name: stackit-git-keda

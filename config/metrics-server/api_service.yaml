@@ -10,7 +10,7 @@ metadata:
 spec:
   service:
     name: keda-metrics-apiserver
-    namespace: keda
+    namespace: stackit-git-keda
   group: external.metrics.k8s.io
   version: v1beta1
   groupPriorityMinimum: 100

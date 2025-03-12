@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/version: latest
     app.kubernetes.io/part-of: keda-operator
   name: keda-metrics-apiserver
-  namespace: keda
+  namespace: stackit-git-keda
 spec:
   replicas: 1
   selector:
@@ -22,6 +22,8 @@ spec:
       securityContext:
         runAsNonRoot: true
       serviceAccountName: keda-operator
+      imagePullSecrets:
+        - name: stackit-git-image-registry-auth
       containers:
         - name: keda-metrics-apiserver
           image: ghcr.io/kedacore/keda-metrics-apiserver:latest

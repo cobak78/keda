@@ -14,7 +14,7 @@ webhooks:
   clientConfig:
     service:
       name: keda-admission-webhooks
-      namespace: keda
+      namespace: stackit-git-keda
       path: /validate-keda-sh-v1alpha1-scaledobject
   failurePolicy: Ignore
   matchPolicy: Equivalent
@@ -38,7 +38,7 @@ webhooks:
   clientConfig:
     service:
       name: keda-admission-webhooks
-      namespace: keda
+      namespace: stackit-git-keda
       path: /validate-keda-sh-v1alpha1-scaledjob
   failurePolicy: Ignore
   matchPolicy: Equivalent
@@ -62,7 +62,7 @@ webhooks:
   clientConfig:
     service:
       name: keda-admission-webhooks
-      namespace: keda
+      namespace: stackit-git-keda
       path: /validate-keda-sh-v1alpha1-triggerauthentication
   failurePolicy: Ignore
   matchPolicy: Equivalent
@@ -86,7 +86,7 @@ webhooks:
   clientConfig:
     service:
       name: keda-admission-webhooks
-      namespace: keda
+      namespace: stackit-git-keda
       path: /validate-keda-sh-v1alpha1-clustertriggerauthentication
   failurePolicy: Ignore
   matchPolicy: Equivalent
@@ -110,7 +110,7 @@ webhooks:
   clientConfig:
     service:
       name: keda-admission-webhooks
-      namespace: keda
+      namespace: stackit-git-keda
       path: /validate-eventing-keda-sh-v1alpha1-cloudeventsource
   failurePolicy: Ignore
   matchPolicy: Equivalent
@@ -134,7 +134,7 @@ webhooks:
   clientConfig:
     service:
       name: keda-admission-webhooks
-      namespace: keda
+      namespace: stackit-git-keda
       path: /validate-eventing-keda-sh-v1alpha1-clustercloudeventsource
   failurePolicy: Ignore
   matchPolicy: Equivalent

@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: keda-admission
-  namespace: keda
+  namespace: stackit-git-keda
   labels:
     app: keda-admission-webhooks
     app.kubernetes.io/name: admission-webhooks
@@ -25,6 +25,8 @@ spec:
       securityContext:
         runAsNonRoot: true
       serviceAccountName: keda-operator
+      imagePullSecrets:
+        - name: stackit-git-image-registry-auth
       containers:
         - name: keda-admission-webhooks
           image: ghcr.io/kedacore/keda-admission-webhooks:latest
